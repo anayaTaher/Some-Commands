@@ -1,0 +1,22 @@
+==========> ReactJS Commands <==========
+
+=====> To Create ReactJS App <=====
+
+First Method [ Using npm ]:
+    => npm install create-react-app -g 
+    => create-react-app [ Project-Name ]
+
+Second Method [ Using npx ]:
+    => npx create-react-app [ Project-Name ]
+
+Third Method [ Using PhpStorm GUI ]:
+    => Only Choose React Project To Create It.
+
+=====> To Run ReactJS App <=====
+    => cd [ Project-Name ]: To Enter Inside Your Project Folder. 
+    => npm start: To Run Your React App.
+
+*************************
+Note: [ ReactJS-Project-Name ] Can Not Contain Capital Letters. 
+Note: By Default, ReactJS App Runs On Port 3000. 
+*************************

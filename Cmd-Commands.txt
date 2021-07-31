@@ -1,9 +1,11 @@
-==========> To Run C/C++ Code From Cmd <==========
-    => Compile Code [Translate It To Machine Language]
-            => gcc [ CodeName.c ] -o [ ProductName.exe ] For C
-            => g++ [ CodeName.cpp ] -o [ ProductName.exe ] For C++
-    => Run Code 
-            =>[ ProductName.exe ] [ Parameters If Exist ]
+To Run C/C++ Code From Cmd
+
+=>  Compile Code [Translate It To Machine Language]
+    =>  gcc [ FileName.c   ] -o [ ProductName.exe ] For C
+    =>  g++ [ FileName.cpp ] -o [ ProductName.exe ] For C++
+
+=>  Run Code 
+    =>  [ ProductName.exe ] [ Parameters If Exist ]
 
 C Ex:   => gcc Test.c -o Product.exe
         => Product.exe 7 5 3
@@ -21,15 +23,21 @@ Notes:
     ** argv[i] Is A String So Should Be Casting It To Equivalent Data Type According To Corresponding Parameter.
     ** atoi(): Method To Parse String To Integer.
 
+To Run Java Code From Cmd
 
-==========> To Run Java Code From Cmd <==========
-    => Compile Code [Translate It To Bytecode(.class) ]
-            => javac [ CodeName.java ]
+=>  Compile Code [Translate It To Bytecode(.class) ]
+        =>  javac [ FileName.java ]      => If There Is No Packages
+        =>  javac -d . [ FileName.java ] => If There Is Packages
+        Note: 
     => Run Code 
-            => java [ CodeName ] [ Parameters If Exist ]
+            => java [ FileName ] [ Parameters If Exist ] => If There Is No Packages
+            => java [ PackageName.FileName ] [ Parameters If Exist ] => If There Is Packages
 
-    Ex: => javac Test.java
-        => java Test 7 5 3
+    No Packages Ex:   => javac Test.java
+                      => java Test 7 5 3
+
+    With Packages Ex: => javac -d . Test.java
+                      => java edu.najah.Test 7 5 3
 
 Notes:
     ** Main Should Contain One parameter [ String[] args ]
@@ -38,3 +46,4 @@ Notes:
     ** args[2] = Third Parameter  [ In Our Case = 3 ]
     ** args[i] Is A String So Should Be Casting It To Equivalent Data Type According To Corresponding Parameter.
     ** Integer.parseInt(): Method To Parse String To Integer.
+    ** (.) Maens Current Directory, You Can Put Any Relative Path Nested It.
